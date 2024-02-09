@@ -1,0 +1,6 @@
+
+To start the program click run (web server must be running)
+To see different views of pkgInfos, choose from the 3 buttons at the top
+To add a package, click the add button and fill in the information and click add
+To delete a package, click the delete button
+To set a package as delivered, check the box labeled delivered

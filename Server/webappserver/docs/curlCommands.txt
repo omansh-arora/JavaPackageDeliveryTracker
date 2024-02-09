@@ -1,0 +1,26 @@
+
+
+
+# Curl command for pinging
+curl -i -X GET localhost:8080/ping
+
+# Curl command for getting the package array as a JSON String
+curl -i -X GET localhost:8080/listAll
+
+# Curl command for adding a package (book in this example)
+curl -i -H "Content-Type: application/json" -X POST -d '{"type": "Book","author": "Ricky","name": "Wimply Kid","notes": "Good Book","price": 4.0,"weight": 1.0,"deliveryDate": "2023-07-21T03:30"}' localhost:8080/addPackage
+
+# Curl command for removing a package at index 0
+curl -i -X POST localhost:8080/removePackage/0
+
+# Curl command for getting an array of overdue packages as a JSON String
+curl -i -X GET localhost:8080/listOverduePackage
+
+# Curl command for getting an array of upcoming packages as a JSON String
+curl -i -X GET localhost:8080/listUpcomingPackage
+
+# Curl command for changing delivery status of package at index 0
+curl -i -X POST localhost:8080/markPackageAsDelivered/0
+
+# Curl command for exiting and saving server data
+curl -i -X GET localhost:8080/exit
